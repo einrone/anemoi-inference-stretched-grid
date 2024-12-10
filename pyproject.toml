@@ -1,0 +1,39 @@
+[build-system]
+requires = [
+  "setuptools>=60",
+  "setuptools-scm>=8",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "anemoi-inference-stretched-grid"
+description = "A MetNorway python package for inference. This is for production and verification."
+keywords = [
+  "ai",
+  "datasets",
+  "tools",
+]
+license = { file = "LICENSE" }
+authors = [
+  { name = "Norwegian Meteorological Institute (MetNorway)", email = "arams@met.no" },
+]
+requires-python = ">=3.9"
+classifiers = [
+  "Development Status :: 4 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: Apache Software License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dynamic = ["version"]
+
+# add deps later 
+
+[tool.setuptools]
+packages = { find = {} }  # Automatically find packages
